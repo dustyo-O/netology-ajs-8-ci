@@ -20,5 +20,5 @@ export default function calculateCashback(amount) {
 
   if (!key) return 0;
 
-  return Math.ceil(amount * cashback[key].percent / 100);
+  return Math.ceil(amount * cashback[key].percent * 0.01);
 }
